@@ -1,0 +1,299 @@
+
+.app {
+  min-height: 100vh;
+  width: 100%;
+  background: #f5f7fa;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Hero */
+.hero {
+  padding: 65px 24px 55px;
+  text-align: center;
+  background: linear-gradient(135deg, #eef6ff, #ffffff);
+}
+
+.hero-label,
+.section-label {
+  color: #70aee3;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  max-width: 1000px;
+  margin: 18px auto;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.2;
+  color: #26364a;
+}
+
+.hero > p:not(.hero-label) {
+  max-width: 700px;
+  margin: 16px auto 25px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #70b2e8;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+
+.hero-button:hover {
+  background: #438fc9;
+}
+
+/* Students section */
+.students-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 24px 65px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.section-label {
+  margin: 0 0 8px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #26364a;
+  font-size: 30px;
+}
+
+.student-count {
+  color: #718096;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+/* Three cards per row */
+.students-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 26px !important;
+  align-items: stretch;
+}
+
+.students-grid .student-card {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 24px 20px;
+  background: #ffffff;
+  border: 1px solid #e9edf2;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(30, 50, 70, 0.08);
+  text-align: center;
+  color: #555;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.students-grid .student-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(30, 50, 70, 0.13);
+}
+
+/* Student photo */
+.student-photo {
+  display: block;
+  width: 90px !important;
+  height: 90px !important;
+  margin: 0 auto 15px;
+  border-radius: 50% !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Card title */
+.student-title {
+  margin: 8px 0 14px;
+  color: #70b2e8;
+  font-size: 27px;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+/* Student information */
+.student-details p {
+  margin: 10px 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.student-details strong {
+  color: #333;
+}
+
+/* Contact button */
+.student-card .contact-button {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: #70b2e8;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.student-card .contact-button:hover {
+  background: #438fc9;
+}
+
+/* Footer */
+footer {
+  padding: 24px 16px;
+  text-align: center;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+  .students-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 45px 18px;
+  }
+
+  .students-section {
+    padding: 35px 16px 45px;
+  }
+
+  .students-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .section-heading h2 {
+    font-size: 25px;
+  }
+
+  .students-grid .student-card {
+    max-width: 360px;
+  }
+}
+
+/* Header UniConnect */
+.site-header {
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid #e8edf3;
+  box-shadow: 0 2px 8px rgba(30, 50, 70, 0.05);
+}
+
+.header-container {
+  max-width: 1200px;
+  min-height: 82px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #70b2e8;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.brand-name {
+  color: #26364a;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.header-subtitle {
+  margin: 0;
+  color: #718096;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    padding: 14px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .brand-name {
+    font-size: 22px;
+  }
+}
+
+/* Navigation */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 15px 24px;
+  background: #ffffff;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.navbar a {
+  color: #526174;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #70b2e8;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    gap: 20px;
+    padding: 13px;
+  }
+}
