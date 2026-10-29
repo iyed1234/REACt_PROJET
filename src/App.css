@@ -7,7 +7,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Hero */
 .hero {
   padding: 65px 24px 55px;
   text-align: center;
@@ -54,7 +53,6 @@
   background: #438fc9;
 }
 
-/* Students section */
 .students-section {
   width: 100%;
   max-width: 1200px;
@@ -86,7 +84,6 @@
   white-space: nowrap;
 }
 
-/* Three cards per row */
 .students-grid {
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
@@ -113,7 +110,6 @@
   box-shadow: 0 8px 22px rgba(30, 50, 70, 0.13);
 }
 
-/* Student photo */
 .student-photo {
   display: block;
   width: 90px !important;
@@ -124,7 +120,6 @@
   object-position: center;
 }
 
-/* Card title */
 .student-title {
   margin: 8px 0 14px;
   color: #70b2e8;
@@ -133,7 +128,6 @@
   font-weight: 400;
 }
 
-/* Student information */
 .student-details p {
   margin: 10px 0;
   color: #666;
@@ -146,7 +140,6 @@
   color: #333;
 }
 
-/* Contact button */
 .student-card .contact-button {
   display: inline-block;
   margin-top: 12px;
@@ -163,13 +156,11 @@
   background: #438fc9;
 }
 
-/* Footer */
 footer {
   padding: 24px 16px;
   text-align: center;
 }
 
-/* Responsive layout */
 @media (max-width: 900px) {
   .students-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
@@ -202,7 +193,6 @@ footer {
   }
 }
 
-/* Header UniConnect */
 .site-header {
   width: 100%;
   background: #ffffff;
@@ -266,7 +256,6 @@ footer {
   }
 }
 
-/* Navigation */
 .navbar {
   width: 100%;
   display: flex;
@@ -297,3 +286,96 @@ footer {
     padding: 13px;
   }
 }
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 25px 0;
+}
+
+.actions button {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+  transition: all 0.3s ease;
+}
+
+.actions button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.35);
+}
+
+.actions button:active {
+  transform: scale(0.96);
+}
+
+.student-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.contact-button {
+  display: inline-block;
+  background: #f0dfc3;
+  color: #554536;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 14px;
+  font-size: 13px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-button:hover {
+  background: #dfc59e;
+  transform: translateY(-2px);
+}
+
+.delete-button {
+  background: #f5d5d5;
+  color: #a12626;
+}
+
+.delete-button:hover {
+  background: #edbaba;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.edit-form input,
+.filter-container input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.filter-container input {
+  width: 280px;
+  max-width: 90%;
+}
+
